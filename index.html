@@ -72,9 +72,11 @@
 						<!-- <li><a href="#" data-nav-section="work">Work</a></li> 
 						<li><a href="#" data-nav-section="blog">Blog</a></li>-->
 						<li><a href="#" data-nav-section="contact">Contact</a></li> 
-						<li><a href="https://akm.web.id/profile/en" target="_blank">Read in English</a></li>
+						<li><a href="en/index.html" target="_blank">Read in English</a></li>
+						
 					</ul>
 				</div>
+				<div id="google_translate_element"></div>
 			</nav>
 
 			<div class="colorlib-footer">
@@ -547,6 +549,7 @@
 													<li>Mengetahui tentang proses development self hosting sampai online.</li>
 													<li>Mengerti cara mengoperasikan sebuah hosting panel, seperti Cpanel, Vesta, CWP, Cyberpanel, webmin).</li>
 													<li>Menggunakan Cloudflare sebagai proxy dan CDN.</li>
+													<li>Sedikit mengerti tentang Git.</li>
 												</ul>
 											</p>
 										</div>
@@ -643,7 +646,7 @@
 
 					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
 					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-none">
+					               <div class="timeline-icon color-3">
 									   <i class="icon-pen2"></i>
 					               </div>
 								   <div class="timeline-label">
@@ -924,6 +927,13 @@
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
+	<!-- google translate -->
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+			new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+			}
+		</script>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	</body>
 </html>
 
