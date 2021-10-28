@@ -1,14 +1,6 @@
-<<<<<<< HEAD
-<IfModule mod_rewrite.c>
-=======
 #<IfModule mod_rewrite.c>
->>>>>>> 7371c62134b29e8b4e9bb8f56416e15e085bef8d
 #RewriteEngine On
 #RewriteCond %{HTTP_HOST} ^akm.web.id [NC,OR]
 #RewriteCond %{HTTP_HOST} !^www.akm.web.id [NC]
 #RewriteRule ^/?(.*)$ https://akm.web.id/blog/$1 [L,R=301,NC]
-<<<<<<< HEAD
-</IfModule>
-=======
 #</IfModule>
->>>>>>> 7371c62134b29e8b4e9bb8f56416e15e085bef8d
