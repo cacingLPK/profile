@@ -1,4 +1,14 @@
-<?php
+<?php  
+  require '../proses/funcDB.php';
+  require '../proses/funcRegister.php';
+
+  if (isset($_POST['submit'])){
+      if (register($_POST) > 0) {
+          echo "<script>alert('user berhasil register');</script>";
+      } else {
+          echo mysqli_error($conn);
+      }
+  }
 ?>
 
 <!DOCTYPE html>
