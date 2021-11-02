@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Registration Page (v2)</title>
+  <title>Admin Register</title>
 
   <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="css/adminlte.css">
+  <link rel="stylesheet" href="../css/adminlte.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
   <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="../css/fontawesome.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="css/fontsgoogleapis.css">
+  <link rel="stylesheet" href="../css/fontsgoogleapis.css">
 </head>
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a>
+      <a href="" class="h1"><b>Admin</b>Register</a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Register a new membership</p>
@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="text" class="form-control" placeholder="Username" name="user">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" placeholder="Password" name="pass">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -49,7 +49,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Retype password">
+          <input type="password" class="form-control" placeholder="Retype password" name="pass2">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -61,19 +61,19 @@
             <div class="icheck-primary">
               <input type="checkbox" id="agreeTerms" name="terms" value="agree">
               <label for="agreeTerms">
-               I agree to the <a href="#">terms</a>
+               I agree to the <a href="terms.html">terms</a>
               </label>
             </div>
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <button type="submit" class="btn btn-primary btn-block" name="submit">Register</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
 
-      <div class="social-auth-links text-center">
+      <!-- <div class="social-auth-links text-center">
         <a href="#" class="btn btn-block btn-primary">
           <i class="fab fa-facebook mr-2"></i>
           Sign up using Facebook
@@ -82,9 +82,9 @@
           <i class="fab fa-google-plus mr-2"></i>
           Sign up using Google+
         </a>
-      </div>
+      </div> -->
 
-      <a href="../panel/" class="text-center">I already have a membership</a>
+      <a href="../admin/" class="text-center">I already have a membership</a>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->
@@ -92,10 +92,10 @@
 <!-- /.register-box -->
 
 <!-- jQuery -->
-<script src="js/jquery.js"></script>
+<script src="../js/jquery.js"></script>
 <!-- Bootstrap 4 -->
-<script src="js/bootstrap.js"></script>
+<script src="../js/bootstrap.js"></script>
 <!-- AdminLTE App -->
-<script src="js/adminlte.js"></script>
+<script src="../js/adminlte.js"></script>
 </body>
 </html>
