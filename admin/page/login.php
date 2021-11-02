@@ -1,3 +1,7 @@
+<?php 
+  require '../proses/funcLogin.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
