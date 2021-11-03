@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 require 'funcDB.php';
 
 if (isset($_POST['submit'])) {
@@ -12,6 +12,7 @@ if (isset($_POST['submit'])) {
 		$ambilDariDB = mysqli_fetch_assoc($cekUsername);
 
 		if (password_verify($password,$ambilDariDB['password'])) {
+			$_SESSION['login']=true;
 			header('Location: ../page/dashboard.php');
 			exit();
 		} else {

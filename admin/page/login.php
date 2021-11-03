@@ -1,5 +1,10 @@
 <?php 
+  //session_start();
   require '../proses/funcLogin.php';
+
+  if (isset($_SESSION['login'])) {
+    header('Location: dashboard.php');
+  }
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +35,7 @@
 
       <form action="" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Username" name="user">
+          <input type="text" class="form-control" placeholder="Username" name="user" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -38,7 +43,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password" name="pass">
+          <input type="password" class="form-control" placeholder="Password" name="pass" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
