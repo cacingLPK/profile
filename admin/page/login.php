@@ -3,8 +3,12 @@
   require '../proses/funcLogin.php';
 
   if (isset($_SESSION['login'])) {
-    header('Location: dashboard.php');
+     header('Location: dashboard.php');
   }
+
+  // if (isset($_SESSION['salahPassword'])) {
+  //   echo "passwordlu salah cok";
+  // }
 ?>
 
 <!DOCTYPE html>
@@ -96,5 +100,25 @@
 <script src="../js/bootstrap.js"></script>
 <!-- AdminLTE App -->
 <script src="../js/adminlte.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
+<?php if (isset($_POST['submit']) && isset($_SESSION['salahPassword'])) :?>
+  <script>
+    Swal.fire({
+      title: "Passowrd Salah!",
+      text: "Do you want to continue",
+      icon: "error"
+    });
+  </script>
+<?php endif; ?>
+
+<?php if(isset($_POST['submit']) && isset($_SESSION['salahUsername'])): ?>
+  <script>
+    Swal.fire({
+      title: "Username Salah!",
+      text: "Do you want to continue",
+      icon: "error"
+    });
+  </script>
+<?php endif; ?>
 </body>
 </html>

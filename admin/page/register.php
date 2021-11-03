@@ -1,6 +1,11 @@
 <?php  
+  session_start();
   require '../proses/funcDB.php';
   require '../proses/funcRegister.php';
+
+  if (isset($_SESSION['login'])) {
+    header('Location: dashboard.php');
+  }
 
   if (isset($_POST['submit'])){
       if (register($_POST) > 0) {
@@ -9,6 +14,7 @@
           echo mysqli_error($conn);
       }
   }
+
 ?>
 
 <!DOCTYPE html>

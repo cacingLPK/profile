@@ -16,14 +16,18 @@ if (isset($_POST['submit'])) {
 			header('Location: ../page/dashboard.php');
 			exit();
 		} else {
-			echo "
-				<script>alert('password salah');</script>
-			";
+			// echo '
+			// 	<script>alert("username salah");</script>
+				
+			//  ';
+			$_SESSION['salahPassword'] = true;
 		}
 	} else {
-		echo "
-			<script>alert('username salah');</script>
-		";
+		// echo "
+		// 	<script>alert('username salah');</script>
+		// ";
+		
+		$_SESSION['salahUsername'] = true;
 	}
 }
 
