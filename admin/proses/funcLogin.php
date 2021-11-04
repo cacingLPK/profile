@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
 		// 	<script>alert('username salah');</script>
 		// ";
 		
-		$_SESSION['salahUsername'] = true;
+		$_SESSION['error'] = true;
 	}
 }
 

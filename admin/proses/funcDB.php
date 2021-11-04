@@ -3,7 +3,7 @@
 	if ($conn) {
 		// echo "sukses";
 	} else{
-		echo mysqli_error($conn);
+		echo "error";
 	}
 
 	function($query){
