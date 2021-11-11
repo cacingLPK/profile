@@ -1,10 +1,27 @@
 <?php 
   //session_start();
   require '../proses/funcLogin.php';
+  require '../proses/funcDB.php';
+
+  if (isset($_COOKIE['dongkap'])){
+
+    $id = $_COOKIE['dongkap'];
+    $uname = $_COOKIE['linggih']; 
+
+    $result = mysqli_query($conn, "SELECT username FROM users WHERE id = $id");
+    $dapet = mysqli_fetch_assoc($result);
+
+    if($uname === hash("sha-256", $dapet['username'])){
+      $_SESSION['login'] = true;
+
+    }
+
+  }
 
   if (isset($_SESSION['login'])) {
      header('Location: dashboard.php');
-  }
+
+  } 
 
   // if (isset($_SESSION['salahPassword'])) {
   //   echo "passwordlu salah cok";
@@ -34,11 +51,11 @@
         <div class="card-header text-center"> 
           <a href="#" class="h1"><b>Admin </b>Profile</a>
         </div>
-    <div class="card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
-      
-      <form action="" method="post">
-        <div class="input-group mb-3">
+        <div class="card-body">
+          <p class="login-box-msg">Sign in to start your session</p>
+          
+          <form action="" method="post">
+            <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Username" name="user" required>
           <div class="input-group-append">
             <div class="input-group-text">
@@ -57,7 +74,7 @@
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
-              <input type="checkbox" id="remember">
+              <input type="checkbox" id="remember" name="ingat">
               <label for="remember">
                 Remember Me
               </label>
@@ -103,14 +120,13 @@
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
 
-
 <?php if(isset($_POST['submit']) && isset($_SESSION['salahUsername'])): ?>
   <script>
     Swal.fire({
       title: "Username Salah!",
       text: "Do you want to continue",
       icon: "error",
-      timer:1500
+      //timer:1500
     });
   </script>
   <?php //exit(); ?>
@@ -119,14 +135,15 @@
 <?php if (isset($_POST['submit']) && isset($_SESSION['salahPassword'])) :?>
   <script>
     Swal.fire({
-      title: "Passowrd Salah!",
+      title: "Password Salah!",
       text: "Do you want to continue",
       icon: "error",
-      timer:1500
+      //timer:1500
     });
   </script>
   <?php //exit(); ?>
 <?php endif; ?>
+
 
 </body>
 </html>
