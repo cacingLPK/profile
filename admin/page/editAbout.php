@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="../css/fontawesome.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../css/adminlte.css">
+  <link rel="stylesheet" href="../css/summernote.css">
+  <script src="https://cdn.ckeditor.com/ckeditor5/31.0.0/classic/ckeditor.js"></script>
+
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -155,16 +158,6 @@
           <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
         </div>
       </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
-        </a>
-      </li> -->
     </ul>
   </nav>
   <!-- /.navbar -->
@@ -273,12 +266,13 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Blank Page</h1>
+            <h1>Edit About</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
+              <li class="breadcrumb-item">Edit Profile</li>
+              <li class="breadcrumb-item active">About</li>
             </ol>
           </div>
         </div>
@@ -287,32 +281,115 @@
 
     <!-- Main content -->
     <section class="content">
-
+      <?php 
+        // query buat ambil data about
+        $queryAbout = mysqli_query($conn, "SELECT * FROM about");
+        $resultAbout = mysqli_fetch_assoc($queryAbout);
+      ?>
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Title</h3>
+          <h3 class="card-title">Meta Header</h3>
 
           <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-              <i class="fas fa-times"></i>
-            </button>
+            
           </div>
         </div>
         <div class="card-body">
-          Start creating your amazing application!
+            <div id="meta">
+                <?php 
+                  $dataMeta = $resultAbout['meta'];
+                  echo $dataMeta;
+                ?>
+            </div>
+            <script>
+                ClassicEditor
+                        .create( document.querySelector( '#meta' ) )
+                        .then( editor => {
+                                console.log( editor );
+                        } )
+                        .catch( error => {
+                                console.error( error );
+                        } );
+            </script>
+        </div>
+        <!-- /.card-body -->
+        <!-- /.card-footer-->
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">H2</h3>
+
+          <div class="card-tools">
+            
+          </div>
+        </div>
+        <div class="card-body">
+            <div id="h2">
+                <?php 
+                    $dataH2 = $resultAbout['h2'];
+                    echo $dataH2;
+                ?>
+            </div>
+            <script>
+                ClassicEditor
+                        .create( document.querySelector( '#h2' ) )
+                        .then( editor => {
+                                console.log( editor );
+                        } )
+                        .catch( error => {
+                                console.error( error );
+                        } );
+            </script>
+        </div>
+        <!-- /.card-body -->
+        <!-- /.card-footer-->
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Content</h3>
+
+          <div class="card-tools">
+            
+          </div>
+        </div>
+        <div class="card-body">
+            <div id="Content">
+                <?php 
+                    $dataIsi = $resultAbout['isi'];
+                    echo $dataIsi;
+                ?>
+            </div>
+            <script>
+                ClassicEditor
+                        .create( document.querySelector( '#Content' ) )
+                        .then( editor => {
+                                console.log( editor );
+                        } )
+                        .catch( error => {
+                                console.error( error );
+                        } );
+            </script>
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
-          Footer
+          <button type="submit" class="btn btn-primary" name="save">Save</button>
         </div>
         <!-- /.card-footer-->
+        <?php 
+          // insert data edit
+          if (isset($_POST['save'])){
+            $insertAbout = mysqli_query($conn, "UPDATE about SET isi='$dataIsi' where Id=1");
+            echo "berhasil";
+          } 
+          // if ($conn->query($insertAbout) === TRUE) {
+          //   echo "Record updated successfully";
+          // } else {
+          //   echo "Error updating record: " . $conn->error;
+          // }
+        ?>
       </div>
       <!-- /.card -->
-
     </section>
     <!-- /.content -->
   </div>
@@ -341,5 +418,19 @@
 <script src="../js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../js/demo.js"></script>
+<script src="../js/summernote.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    // Summernote
+    $('#summernote').summernote()
+
+    // // CodeMirror
+    // CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
+    //   mode: "htmlmixed",
+    //   theme: "monokai"
+    // });
+  })
+</script>
 </body>
 </html>
