@@ -6,8 +6,13 @@
 		echo "error";
 	}
 
-	function($query){
+	function query($query){
 		global $conn;
-		mysqli_query($conn, $query);
+		$result = mysqli_query($conn, $query);
+		$rows = [];
+		while ($row = mysqli_fetch_assoc($result)){
+			$rows[]=$row;
+		}
+		return $rows;
 	}
 ?>

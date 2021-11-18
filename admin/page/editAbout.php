@@ -287,6 +287,7 @@
         $resultAbout = mysqli_fetch_assoc($queryAbout);
       ?>
       <!-- Default box -->
+      <form action="" method="POST">
       <div class="card">
         <div class="card-header">
           <h3 class="card-title">Meta Header</h3>
@@ -296,26 +297,26 @@
           </div>
         </div>
         <div class="card-body">
-            <div id="meta">
-                <?php 
-                  $dataMeta = $resultAbout['meta'];
-                  echo $dataMeta;
-                ?>
-            </div>
+            <textarea name="meta" id="meta">
+              <?php 
+                $dataMeta = $resultAbout['meta'];
+                echo $dataMeta;
+              ?>
+            </textarea>
             <script>
                 ClassicEditor
-                        .create( document.querySelector( '#meta' ) )
-                        .then( editor => {
-                                console.log( editor );
-                        } )
-                        .catch( error => {
-                                console.error( error );
-                        } );
+                  .create( document.querySelector( '#meta' ) )
+                  .then( editor => {
+                          console.log( editor );
+                  } )
+                  .catch( error => {
+                          console.error( error );
+                  } );
             </script>
+            <!-- tester -->
         </div>
-        <!-- /.card-body -->
-        <!-- /.card-footer-->
       </div>
+      <!-- </form> -->
       <div class="card">
         <div class="card-header">
           <h3 class="card-title">H2</h3>
@@ -325,22 +326,20 @@
           </div>
         </div>
         <div class="card-body">
-            <div id="h2">
-                <?php 
-                    $dataH2 = $resultAbout['h2'];
-                    echo $dataH2;
-                ?>
-            </div>
+            <textarea name="header" id="header">
+              <?= $resultAbout['h2']; ?>
+            </textarea>
             <script>
                 ClassicEditor
-                        .create( document.querySelector( '#h2' ) )
-                        .then( editor => {
-                                console.log( editor );
-                        } )
-                        .catch( error => {
-                                console.error( error );
-                        } );
+                  .create( document.querySelector( '#header' ) )
+                  .then( editor => {
+                          console.log( editor );
+                  } )
+                  .catch( error => {
+                          console.error( error );
+                  } );
             </script>
+            <!-- tester -->
         </div>
         <!-- /.card-body -->
         <!-- /.card-footer-->
@@ -354,22 +353,23 @@
           </div>
         </div>
         <div class="card-body">
-            <div id="Content">
-                <?php 
-                    $dataIsi = $resultAbout['isi'];
-                    echo $dataIsi;
-                ?>
-            </div>
+            <textarea name="isi" id="content">
+              <?php 
+                $dataIsi = $resultAbout['isi'];
+                echo $dataIsi;
+              ?>
+            </textarea>
             <script>
                 ClassicEditor
-                        .create( document.querySelector( '#Content' ) )
-                        .then( editor => {
-                                console.log( editor );
-                        } )
-                        .catch( error => {
-                                console.error( error );
-                        } );
+                  .create( document.querySelector( '#content' ) )
+                  .then( editor => {
+                          console.log( editor );
+                  } )
+                  .catch( error => {
+                          console.error( error );
+                  } );
             </script>
+            <!-- tester -->
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
@@ -379,17 +379,20 @@
         <?php 
           // insert data edit
           if (isset($_POST['save'])){
-            $insertAbout = mysqli_query($conn, "UPDATE about SET isi='$dataIsi' where Id=1");
-            echo "berhasil";
+            $meta = $_POST['meta'];
+            $header = $_POST['header'];
+            $isi = $_POST['isi'];
+            $updateAbout = mysqli_query($conn, "UPDATE about SET 
+              meta = '$meta', 
+              h2 = '$header',
+              isi = '$isi'
+            ");
+            echo "<meta http-equiv='refresh' content='0'>";
           } 
-          // if ($conn->query($insertAbout) === TRUE) {
-          //   echo "Record updated successfully";
-          // } else {
-          //   echo "Error updating record: " . $conn->error;
-          // }
         ?>
       </div>
       <!-- /.card -->
+      </form>
     </section>
     <!-- /.content -->
   </div>
@@ -418,19 +421,6 @@
 <script src="../js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../js/demo.js"></script>
-<script src="../js/summernote.js"></script>
-
-<script type="text/javascript">
-  $(function () {
-    // Summernote
-    $('#summernote').summernote()
-
-    // // CodeMirror
-    // CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
-    //   mode: "htmlmixed",
-    //   theme: "monokai"
-    // });
-  })
 </script>
 </body>
 </html>
