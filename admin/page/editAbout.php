@@ -298,10 +298,7 @@
         </div>
         <div class="card-body">
             <textarea name="meta" id="meta">
-              <?php 
-                $dataMeta = $resultAbout['meta'];
-                echo $dataMeta;
-              ?>
+              <?= $dataMeta = $resultAbout['meta']; ?>
             </textarea>
             <script>
                 ClassicEditor
@@ -354,10 +351,7 @@
         </div>
         <div class="card-body">
             <textarea name="isi" id="content">
-              <?php 
-                $dataIsi = $resultAbout['isi'];
-                echo $dataIsi;
-              ?>
+              <?= $dataIsi = $resultAbout['isi']; ?>
             </textarea>
             <script>
                 ClassicEditor
