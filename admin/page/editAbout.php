@@ -380,6 +380,7 @@
               meta = '$meta', 
               h2 = '$header',
               isi = '$isi'
+              WHERE Id = 1
             ");
             echo "<meta http-equiv='refresh' content='0'>";
           } 
