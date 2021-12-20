@@ -6,6 +6,7 @@
 		echo "error";
 	}
 
+	// sfsdfsfsdf999999999999999999999999999999999999
 	// function query($query){
 	// 	global $conn;
 	// 	$result = mysqli_query($conn, $query);
