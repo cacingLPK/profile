@@ -1,5 +1,5 @@
 <?php  
-	$conn= mysqli_connect('localhost', 'root', '','akmadmin');
+	$conn= mysqli_connect('localhost', 'akm_admin', 'mobilbalap@','akm_admin');
 	if ($conn) {
 		// echo "sukses";
 	} else{
