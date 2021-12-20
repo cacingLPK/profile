@@ -1,5 +1,6 @@
 <?php
 	require 'admin/proses/funcDB.php';
+	// komen baru coba git
 ?>
 <!DOCTYPE HTML>
 <html>
