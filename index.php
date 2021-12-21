@@ -1,9 +1,9 @@
 <?php
 	require 'admin/proses/funcDB.php';
-	// dsfdfkf
-
-
-	// dsfkkd
+	$a = 1;
+	$b = 2;
+	$c = $a + $b;
+?>
 <!DOCTYPE HTML>
 <html>
 	<head>
