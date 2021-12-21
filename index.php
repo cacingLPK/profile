@@ -1,6 +1,6 @@
 <?php
 	require 'admin/proses/funcDB.php';
-?>
+	// dsfdfkf
 <!DOCTYPE HTML>
 <html>
 	<head>
