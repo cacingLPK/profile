@@ -1,6 +1,10 @@
 <?php
 	require 'admin/proses/funcDB.php';
-	// sdfdsfsdfsdfsdfsdfsdfdf
+	// // sdfdsfsdfsdfsdfsdfsdfdf
+	// sdfdf
+
+	// sd
+	// fsdf
 ?>
 <!DOCTYPE HTML>
 <html>
