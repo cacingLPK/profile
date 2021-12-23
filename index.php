@@ -10,7 +10,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Aris Krisna Marantika</title>
+	<title>88Aris Krisna Marantika</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Nama saya Aris Krisna Marantika. Saya adalah seorang Sysadmin yang masih terus belajar untuk bisa berkembang lebih jauh lagi. Sebagai system Administrator saya terbiasa menggunakan linux ubuntu, centos dan juga menangani masalah troubleshooting pada vps server baik itu AWS, Vultr, digital ocean, ataupun lainnya." />
 	<meta name="keywords" content="Aris Krisna, aris krisna marantika, akm, akm.web.id, indonesia, sysadmin, network engineer, devops, System Administrator, IT Network" />
