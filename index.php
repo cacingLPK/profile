@@ -4,6 +4,7 @@
 	$b = 2;
 	$c = $a + $b;
 	//echo $c;
+	// buat tampil variable doang di n8n
 ?>
 <!DOCTYPE HTML>
 <html>
