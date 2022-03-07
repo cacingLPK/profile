@@ -287,7 +287,7 @@
         $resultAbout = mysqli_fetch_assoc($queryAbout);
       ?>
       <!-- Default box -->
-      <form action="" method="POST">
+    <form action="editAbout.php" method="POST">
       <div class="card">
         <div class="card-header">
           <h3 class="card-title">Meta Header</h3>
@@ -376,14 +376,9 @@
             $meta = $_POST['meta'];
             $header = $_POST['header'];
             $isi = $_POST['isi'];
-            $updateAbout = mysqli_query($conn, "UPDATE about SET 
-              meta = '$meta', 
-              h2 = '$header',
-              isi = '$isi'
-              WHERE Id = 1
-            ");
-            echo "<meta http-equiv='refresh' content='0'>";
-          } 
+            $update = mysqli_query($conn,"UPDATE about SET meta='$meta', h2='$header', isi='$isi' WHERE Id=1");
+            
+          }
         ?>
       </div>
       <!-- /.card -->
