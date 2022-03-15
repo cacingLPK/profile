@@ -551,8 +551,7 @@
 												<ul>
 													<li>Manage the office's internal network (Firewall, DNS, Queue, Mangle, Address List, NAT, Raw, Schedule, Script) using MikroTik.</li>
 													<li>Monitoring, installation, configuration, troubleshooting Linux servers according to the needs of the developer or client.</li>
-													<li>Manage domains, subdomains, and dns in a virtual server.</li>
-													<li>Install, manage, setup VPS on cloud services (Vultr, Digital Ocean, AWS, Linode).</li>
+													<li>Familiar with cloud computing services like Vultr, Digital Ocean, Linode, AWS.</li>
 													<li>
 														Setup a Web server on a VPS using popular engines such as, apache, nginx, openlitespeed, php, MySQL, mariadb. 
 														The web server is generally used for wordpress, laravel, codeigniter, etc.
@@ -561,26 +560,19 @@
 														Creating a Reverse Proxy using (Apache2, Nginx). 
 														In this case, i've create a Reverse Proxy for creating a mirror site from a <i>http</i> domain to represent as an IP domain.
 													</li>
-													<li>Troubleshooting issues around Linux Servers (Ubuntu, Debian, Centos).</li>
 													<li>Understand to using Proxmox to support the company's internal development and production needs.</li>
-													<li>Help programmers solve problems (from the server side) they face when developing an application or website.</li>
-													<li>Install, configure, and manage a Cloud Storage using Nextcloud and integrates with Document Server Onlyoffice.</li>
-													<li>
-														Manage an NFS using Openmediavault as file sharing between office divisions. 
-														In this case, OMV can be used to integrate with Nextcloud, so that staff can access file sharing stored in the office's NFS online.
-													</li>
-													<li>Manage an Email Server for correspondence for all divisions using Zimbra.</li>
-													<li>
-														Manage hundreds of Domains (along with NS records, txt records, mx records) 
-														that are used by the SEO Team in several VPS with the concept of Shared Hosting using Cyberpanel.
-													</li>
-													<li>
-														Monitoring Servers using Observium and integrated it with telegram messenger. So if something happened with the Server, i'd be notified.
-													</li>
+													<li>Get used to using <i>Nextcloud</i>.</li>
+													<li>Manage an NFS using <i>Openmediavault</i> as file sharing between office divisions.</li>
+													<li>Known about setup and how email servers like <i>Zimbra</i> and <i>iRedMail</i> work.</li>
+													<li>Know how DNS work and how to create records such as A, MX, TXT, CNAME, and PTR record. </li>
+													<li>Manage domains with a shared server system using <i>Cyberpanel</i></li>
+													<li>Monitoring Servers using <i>Observium</i> and integrated it with telegram messenger.</li>
 													<li>Understand about the self-hosting development process until online.</li>
-													<li>Understand how to operate a hosting panel, such as Cpanel, Vesta, CWP, Cyberpanel, webmin).</li>
-													<li>Using Cloudflare as proxy and CDN.</li>
-													<li>Understand how Git works and start learning to get used to it.</li>
+													<li>Understand how to operate a hosting panel, such as Cpanel, Vesta, CWP, Cyberpanel, webmin.</li>
+													<li>Using Cloudflare as proxy and DNS Server.</li>
+													<li>Knowing how git works.</li>
+													<li>Create an automation workflow using <i>n8n</i> to do an auto pull when it gets a git trigger and send notification using telegram messenger.</li>
+													<li>Create schedule backup using bash script and cronjob and integrated it with telegram notification using <i>telegram-send</i>.</li>
 												</ul>
 											</p>
 										</div>
