@@ -174,18 +174,18 @@
 										<h3>System Administrator</h3>
 									</div>
 								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+								<!-- <div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
 									<div class="services color-3">
 										<span class="icon2"><i class="icon-search4"></i></span>
 										<h3>SEO Content Writer</h3>
 									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+								</div> -->
+								<!-- <div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
 									<div class="services color-4">
 										<span class="icon2"><i class="icon-data"></i></span>
-										<h3>Hardware & Software Implementator</h3>
+										<h3>IT Infrastructure</h3>
 									</div>
-								</div>
+								</div> -->
 							</div>
 							<!-- <div class="row">
 								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
