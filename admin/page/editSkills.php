@@ -8,5 +8,5 @@
 ?>
 <?php include 'htmlAtas.php' ?>
 <?php include 'sidebar.php' ?>
-<?php include 'contentAbout.php' ?>
+<?php include 'contentSkills.php' ?>
 <?php include 'htmlBawah.php' ?>

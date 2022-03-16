@@ -11,5 +11,5 @@
         echo($query);
       }
       
-    //   header("Location: ../page/editAbout.php");
+      header("Location: ../page/editAbout.php");
 ?>
