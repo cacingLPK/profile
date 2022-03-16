@@ -308,20 +308,20 @@
 			</div> -->
 
 			<section class="colorlib-skills" data-section="skills">
+			<?php
+				$query = mysqli_query($conn, "SELECT meta, h2, isi FROM skills");
+				$data = mysqli_fetch_assoc($query);
+			?>
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">AN ABILITY THAT I CONTINUE TO DEVELOP.</span>
-							<h2 class="colorlib-heading animate-box">Skills</h2>
+							<span class="heading-meta"><?= $data['meta'] ?></span>
+							<h2 class="colorlib-heading animate-box"><?= $data['h2'] ?></h2>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<p>
-								I am well aware that to compete in today's era, I need skills that I can use to compete. 
-								Not a few of my abilities are still in the learning stage. 
-								But I insist that I am ready to compete!
-							</p>
+							<?= $data['isi'] ?>
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="progress-wrap">

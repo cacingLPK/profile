@@ -25,7 +25,7 @@
         $resultAbout = mysqli_fetch_assoc($queryAbout);
       ?>
       <!-- Default box -->
-    <form action="../proses/prosesEditAbout.php" method="POST">
+    <form action="../proses/prosesEditSkills.php" method="POST">
       <div class="card">
         <div class="card-header">
           <h3 class="card-title">Meta Header</h3>
