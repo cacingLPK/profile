@@ -184,7 +184,7 @@
           <img src="../img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block"><?= "iiii" ?></a>
+          <a href="#" class="d-block"><?= $result['username'] ?></a>
         </div>
       </div>
 
@@ -252,6 +252,23 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Users
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Edit User</p>
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -287,7 +304,7 @@
         $resultAbout = mysqli_fetch_assoc($queryAbout);
       ?>
       <!-- Default box -->
-    <form action="editAbout.php" method="POST">
+    <form action="../proses/prosesEditAbout.php" method="POST">
       <div class="card">
         <div class="card-header">
           <h3 class="card-title">Meta Header</h3>
@@ -298,7 +315,7 @@
         </div>
         <div class="card-body">
             <textarea name="meta" id="meta">
-              <?= $dataMeta = $resultAbout['meta']; ?>
+              <?= $resultAbout['meta']; ?>
             </textarea>
             <script>
                 ClassicEditor
@@ -351,7 +368,7 @@
         </div>
         <div class="card-body">
             <textarea name="isi" id="content">
-              <?= $dataIsi = $resultAbout['isi']; ?>
+              <?= $resultAbout['isi']; ?>
             </textarea>
             <script>
                 ClassicEditor
@@ -372,13 +389,8 @@
         <!-- /.card-footer-->
         <?php 
           // insert data edit
-          if (isset($_POST['save'])){
-            $meta = $_POST['meta'];
-            $header = $_POST['header'];
-            $isi = $_POST['isi'];
-            $update = mysqli_query($conn,"UPDATE about SET meta='$meta', h2='$header', isi='$isi' WHERE Id=1");
-            
-          }
+          
+          
         ?>
       </div>
       <!-- /.card -->
