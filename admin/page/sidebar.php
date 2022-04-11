@@ -49,7 +49,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="editEducation.php" class="nav-link">
+                <a href="editEdu.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Education</p>
                 </a>
