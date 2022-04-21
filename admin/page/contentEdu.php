@@ -88,6 +88,8 @@
           </div>
         </div>
         <div class="card-body">
+            <label for="judulisi">Judul isian: </label>
+            <input type="text" name="judulisi" id="judulcontent" value="<?= $resultAbout['judulisi'] ?>">
             <textarea name="isi" id="content">
               <?= $resultAbout['isi']; ?>
             </textarea>
@@ -101,6 +103,42 @@
                           console.error( error );
                   } );
             </script>
+            <!-- tester -->
+        </div>
+        <div class="card-body">
+          <label for="judulisi2">Judul isian 2: </label>
+            <input type="text" name="judulisi2" id="judulcontent2" value="<?= $resultAbout['judulisi2'] ?>">
+            <textarea name="isi2" id="content2">
+              <?= $resultAbout['isi2']; ?>
+            </textarea>
+            <script>
+                ClassicEditor
+                  .create( document.querySelector( '#content2' ) )
+                  .then( editor => {
+                          console.log( editor );
+                  } )
+                  .catch( error => {
+                          console.error( error );
+                  } );
+            </script>
+        <div class="card-body">
+            <label for="judulisi3">Judul isian 3: </label>
+            <input type="text" name="judulisi3" id="judulcontent3" value="<?= $resultAbout['judulisi3'] ?>">
+            <textarea name="isi3" id="content3">
+              <?= $resultAbout['isi3']; ?>
+            </textarea>
+            <script>
+                ClassicEditor
+                  .create( document.querySelector( '#content3' ) )
+                  .then( editor => {
+                          console.log( editor );
+                  } )
+                  .catch( error => {
+                          console.error( error );
+                  } );
+            </script>
+            <!-- tester -->
+        </div>
             <!-- tester -->
         </div>
         <!-- /.card-body -->

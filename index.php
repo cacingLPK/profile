@@ -406,11 +406,15 @@
 			</section><br><br>
 
 			<section class="colorlib-education" data-section="education">
+			<?php
+				$query = mysqli_query($conn, "SELECT * FROM edu");
+				$data = mysqli_fetch_assoc($query);
+			?>
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">SOME OF THE EDUCATION THAT I HAVE ATTENDED.</span>
-							<h2 class="colorlib-heading animate-box">Education</h2>
+							<span class="heading-meta"><?= $data['meta'] ?></span>
+							<h2 class="colorlib-heading animate-box"><?= $data['h2'] ?></h2>
 						</div>
 					</div>
 					<div class="row">
@@ -420,7 +424,7 @@
 									<div class="panel panel-default">
 									    <div class="panel-heading" role="tab" id="headingOne">
 									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">SEO Training
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><?= $data['judulisi'] ?>
 									            </a>
 									        </h4>
 									    </div>
@@ -428,16 +432,7 @@
 									         <div class="panel-body">
 									            <div class="row">
 										      		<div class="col-md-12">
-										      			<p>
-															Non-formal training that I took to learn Search Engine Optimization techniques. 
-															As a result of the training I understood several concepts, such as;
-															<ul>
-																<li>White/Grey/Black Hat SEO</li>
-																<li>Creating Content Seo Friendly</li>
-																<li>Link Building</li>
-																<li>PBN Concept</li>
-															</ul>
-										      			</p>
+										      			<?= $data['isi'] ?>
 										      		</div>
 										      		<!--<div class="col-md-6">
 										      			<p>
