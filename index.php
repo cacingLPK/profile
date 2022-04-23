@@ -336,7 +336,7 @@
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 							<div class="progress-wrap">
-								<h3>Linux</h3>
+								<h3>Linux Server Administration</h3>
 								<div class="progress">
 								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="73"
 								  	aria-valuemin="0" aria-valuemax="100" style="width:73%">

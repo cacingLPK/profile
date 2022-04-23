@@ -1,5 +1,5 @@
 ﻿# Host: localhost  (Version 5.5.5-10.4.20-MariaDB)
-# Date: 2022-04-11 14:34:19
+# Date: 2022-04-21 11:20:41
 # Generator: MySQL-Front 6.0  (Build 2.20)
 
 
@@ -32,6 +32,11 @@ CREATE TABLE `edu` (
   `meta` longtext DEFAULT NULL,
   `h2` longtext DEFAULT NULL,
   `isi` longtext DEFAULT NULL,
+  `judulisi` longtext DEFAULT NULL,
+  `isi2` longtext DEFAULT NULL,
+  `judulisi2` longtext DEFAULT NULL,
+  `isi3` longtext DEFAULT NULL,
+  `judulisi3` longtext DEFAULT NULL,
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
 
@@ -39,7 +44,7 @@ CREATE TABLE `edu` (
 # Data for table "edu"
 #
 
-INSERT INTO `edu` VALUES (1,'<p>kemampuan yang terus saya kembangkan</p>','<p><strong>SKILLS</strong></p>','<p>Dalam hal kemampuan Saya cukup kompeten untuk menjalankan tugas yang di berikan. Jika ada suatu permasalah yang tidak dapat Saya selesaikan dengan kemampuan yang sudah Saya miliki, Saya sangat siap mempelajari hal-hal yang di butuhkan untuk menyelesaikan permasalahan tersebut.</p><p>Saya dapat bekerja dalam tim baik sebagai anggota ataupun memimpin tim Saya sendiri. Sebagai pemimpin, Saya dapat dan berusaha untuk terus mengerahkan kemampuan terbaik dari tiap-tiap anggota tim tersebut dan mengolahnya sehingga menjadikan sebuah <i>output </i>terbaik.</p><p>Jika Saya berperan sebagai anggota, Saya akan mengerahkan kemampuan terbaik Saya dalam berkontribusi dengan anggota tim lainnya untuk menciptakan sebuah <i>output </i>yang di sepakati bersama.</p>');
+INSERT INTO `edu` VALUES (1,'<p>darimana kemampuan saya berasal?</p>','<p>pendidikan</p>','<p>Saya pernah mengikuti pendidikan <i>non-formal, </i>yaitu sebuah pelatihan mempelajari teknik-teknik SEO <i>(Search Engine Optimization). </i>Setelah selesai mengikutin pelatihan tersebut, Saya mengerti beberapa hal, yaitu:</p><ul><li><i>White/Grey/Black Hat</i> SEO</li><li>Membuat sebuah konten yang SEO <i>Friendly</i></li><li>Membangun <i>Link Building</i></li><li>PBN <i>Concept</i></li></ul>','seo training',NULL,NULL,NULL,NULL);
 
 #
 # Structure for table "skills"
