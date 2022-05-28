@@ -531,22 +531,27 @@
 							<h2 class="colorlib-heading animate-box">Work Experience</h2>
 						</div>
 					</div>
+					<?php 
+						$tgl1=strtotime("2020-01-01");
+						$tgl2=strtotime("2020-05-01");
+						$jarak = $tgl2 - $tgl1;
+						$hari = $jarak/60/60/24;
+					?>
 					<div class="row">
 						<div class="col-md-12">
 				         	<div class="timeline-centered">
 							 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 								   <div class="timeline-entry-inner">
-									  <div class="timeline-icon color-3">
+									  <div class="timeline-icon color-2">
 										 <i class="icon-pen2"></i>
 									  </div>
 									  <div class="timeline-label">
-										  <h2><a href="#">System Administrator at PANDI</a> <span>09 Mei 2020 - Now</span></h2>
+										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2020 - Now</span></h2>
 										 <p>
 											 <strong>Jobdesk:</strong><br>
 										   <ul>
-											   <li>Monitoring Infratruktur DNS</li>
-											   <li></li>
-											   <li></li>
+											   <li>Monitoring Infrastruktur DNS</li>
+											   <li><?= $hari; ?>
 										   </ul>
 										 </p>
 									  </div>
@@ -555,7 +560,7 @@
 
 								<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
 								 <div class="timeline-entry-inner">
-									 <div class="timeline-icon color-2">
+									 <div class="timeline-icon color-1">
 										 <i class="icon-pen2"></i>
 										</div>
 										<div class="timeline-label">
