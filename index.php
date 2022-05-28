@@ -62,7 +62,7 @@
 			<div class="text-center">
 				<div class="author-img" style="background-image: url(images/IMG_20190924_085507.jpg);"></div>
 				<h1 id="colorlib-logo"><a href="index.html">Aris Krisna Marantika</a></h1>
-				<span class="position"><a href="#">IT Network</a> at PT Graha Mitra Teguh</span>
+				<span class="position"><a href="#">System Administrator</a> at PANDI</span>
 			</div>
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
 				<div id="navbar" class="collapse">
