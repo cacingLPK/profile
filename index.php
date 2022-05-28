@@ -62,7 +62,7 @@
 			<div class="text-center">
 				<div class="author-img" style="background-image: url(images/IMG_20190924_085507.jpg);"></div>
 				<h1 id="colorlib-logo"><a href="index.html">Aris Krisna Marantika</a></h1>
-				<span class="position"><a href="#">System Administrator</a> at PANDI</span>
+				<span class="position"><a href="#">System Administrator</a> at <font color="CC0000">PANDI</font></span>
 			</div>
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
 				<div id="navbar" class="collapse">
@@ -534,6 +534,25 @@
 					<div class="row">
 						<div class="col-md-12">
 				         	<div class="timeline-centered">
+							 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+								   <div class="timeline-entry-inner">
+									  <div class="timeline-icon color-3">
+										 <i class="icon-pen2"></i>
+									  </div>
+									  <div class="timeline-label">
+										  <h2><a href="#">System Administrator at PANDI</a> <span>09 Mei 2020 - Now</span></h2>
+										 <p>
+											 <strong>Jobdesk:</strong><br>
+										   <ul>
+											   <li>Monitoring Infratruktur DNS</li>
+											   <li></li>
+											   <li></li>
+										   </ul>
+										 </p>
+									  </div>
+								   </div>
+								</article>
+
 								<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
 								 <div class="timeline-entry-inner">
 									 <div class="timeline-icon color-2">
@@ -573,25 +592,6 @@
 										</div>
 									</div>
 								</article>
-
-								<!--<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-								   <div class="timeline-entry-inner">
-									  <div class="timeline-icon color-3">
-										 <i class="icon-pen2"></i>
-									  </div>
-									  <div class="timeline-label">
-										  <h2><a href="#">Junior Network Administrator at PT. Graha Mitra Teguh</a> <span>Jan 2019 - Now</span></h2>
-										 <p>
-											 <strong>Jobdesk:</strong><br>
-										   <ul>
-											   <li>Merancang topologi yang akan di gunakan.</li>
-											   <li>Terjun, tinjau, dan implementasi kebutuhan jaringan sesuai dengan kebutuhan dan permintaan client.</li>
-											   <li>Monitoring, troubleshooting, dan manage jaringan kantor sesuai dengan kebutuhan setiap divisi.</li>
-										   </ul>
-										 </p>
-									  </div>
-								   </div>
-								</article>-->
 
 								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 								   <div class="timeline-entry-inner">
