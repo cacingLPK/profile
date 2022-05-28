@@ -532,10 +532,10 @@
 						</div>
 					</div>
 					<?php 
-						$tgl1=strtotime("2020-01-01");
-						$tgl2=strtotime("2020-05-01");
-						$jarak = $tgl2 - $tgl1;
-						$hari = $jarak/60/60/24;
+						// source from https://jagowebdev.com/menghitung-selisih-waktu-dengan-php/
+						$tpandia  = new DateTime('2020-05-09');
+						$tpandiz = new DateTime(); // Waktu sekarang
+						$tpandidiff  = $tawal->diff($takhir);
 					?>
 					<div class="row">
 						<div class="col-md-12">
@@ -546,7 +546,7 @@
 										 <i class="icon-pen2"></i>
 									  </div>
 									  <div class="timeline-label">
-										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2020 - Now</span></h2>
+										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2020 - Now (<?= $diff->y . ' tahun, '; $diff->m . ' bulan, '; $diff->d . ' hari, ';?>)</span></h2>
 										 <p>
 											 <strong>Jobdesk:</strong><br>
 										   <ul>
