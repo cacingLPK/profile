@@ -537,6 +537,10 @@
 						$tpandiz = new DateTime(); // Waktu sekarang
 						$tpandidiff  = $tpandia->diff($tpandiz);
 						date_default_timezone_set('Asia/Jakarta');
+
+						$thnmasuk = 2020;
+						$thnsekarang = 2020;
+						$hitungtahun = $thnsekarang - $thnmasuk;
 					?>
 					
 					<div class="row">
@@ -548,12 +552,11 @@
 										 <i class="icon-pen2"></i>
 									  </div>
 									  <div class="timeline-label">
-										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2020 - Now (<?= $tpandidiff->format('%Y tahun %m bulan %d hari'); ?>)</span></h2>
+										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2020 - Now (<?php $hitungtahun."tahun" ?>)</span></h2>
 										 <p>
 											 <strong>Jobdesk:</strong><br>
 										   <ul>
 											   <li>Monitoring Infrastruktur DNS</li>
-											   <li><?= $hari; ?>
 										   </ul>
 										 </p>
 									  </div>
