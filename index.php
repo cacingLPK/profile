@@ -536,61 +536,9 @@
 						$tpandia  = new DateTime('2020-05-09');
 						$tpandiz = new DateTime(); // Waktu sekarang
 						$tpandidiff  = $tpandia->diff($tpandiz);
+						date_default_timezone_set('Asia/Jakarta');
 					?>
-					<?php
-						function MasaKerja($tgl_masuk,$tahun_sekarang,$bulan_sekarang,$tanggal_sekarang){
-						if($tgl_masuk=='2020-05-09'){
-							return 0;
-						}else{
-							$date1 = $tgl_masuk;
-							$date2 = $tahun_sekarang.'-'.$bulan_sekarang.'-'.$tanggal_sekarang;
-
-							$ts1 = strtotime($date1);
-							$ts2 = strtotime($date2);
-
-							$year1 = date('Y', $ts1);
-							$year2 = date('Y', $ts2);
-
-							$month1 = date('m', $ts1);
-							$month2 = date('m', $ts2);
-
-							$day1 = date('d', $ts1);
-							$day2 = date('d', $ts2);
-
-							$diff = (($year2 - $year1) * 12) + ($month2 - $month1);
-
-							$tahun=round($diff/12);
-							if(!is_integer($diff/12)){
-								$tahun=$tahun-1;
-							}
-							if($tahun < 10){
-								$tahun='0'.$tahun;
-							}
-							$sisabulan=$diff % 12;
-
-							if($sisabulan < 10){
-								$sisabulan='0'.$sisabulan;
-							}
-							$data['jumlah_bulan']=$diff;
-							
-
-							$d1 = new DateTime($date1);
-							$d2 = new DateTime($date2);
-
-							$diff = $d2->diff($d1);
-
-							$data['masa_kerja']=$diff->y.','.$sisabulan;
-							return $data;
-							}
-						}
-
-						//cara menggunakannya:
-						$masakerja=MasaKerja($row['tgl_masuk'],$_GET['tahun'],$_GET['bulan'],$_GET['tanggal']);
-						//$row['tgl_masuk'] adalah tanggal masuk atau TMT pegawai
-
-						//untuk menampilkannya gunakan ini:
-						//echo $masakerja['masa_kerja'];
-					?>
+					
 					<div class="row">
 						<div class="col-md-12">
 				         	<div class="timeline-centered">
@@ -600,7 +548,7 @@
 										 <i class="icon-pen2"></i>
 									  </div>
 									  <div class="timeline-label">
-										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2020 - Now (<?php echo $masakerja['masa_kerja']; ?>)</span></h2>
+										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2020 - Now (<?= $tpandidiff->format('%Y tahun %m bulan %d hari'); ?>)</span></h2>
 										 <p>
 											 <strong>Jobdesk:</strong><br>
 										   <ul>
