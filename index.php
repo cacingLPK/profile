@@ -546,7 +546,7 @@
 										 <i class="icon-pen2"></i>
 									  </div>
 									  <div class="timeline-label">
-										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2020 - Now (<?= $tpandidiff->y . ' tahun, '; $tpandidiff->m . ' bulan, '; $tpandidiff->d . ' hari, ';?>)</span></h2>
+										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2020 - Now (<?= $diff->format('Usia anda adalah %Y tahun %m bulan %d hari'); ?>)</span></h2>
 										 <p>
 											 <strong>Jobdesk:</strong><br>
 										   <ul>
