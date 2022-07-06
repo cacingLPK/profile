@@ -537,6 +537,9 @@
 						$tpandiz = new DateTime(); // Waktu sekarang
 						$tpandidiff  = $tpandia->diff($tpandiz);
 						date_default_timezone_set('Asia/Jakarta');
+						$ta  = new DateTime('2019-01-02');
+						$tb = new DateTime(); // Waktu sekarang
+						$tc  = $ta->diff($tb);
 
 						$thnmasuk = 2020;
 						$thnsekarang = 2020;
@@ -569,7 +572,7 @@
 										 <i class="icon-pen2"></i>
 										</div>
 										<div class="timeline-label">
-											<h2><a href="#">IT Network at PT Graha Mitra Teguh</a> <span>Jan 2019 - 28 Apr 2022</span></h2>
+											<h2><a href="#">IT Network at PT Graha Mitra Teguh</a> <span>02 Jan 2019 - 28 Apr 2022 (<?= $tc->m ." months ". $tc->y ." Year "?>)</span></h2>
 											<p>
 												<strong>Jobdesk:</strong><br>
 												<ul>
