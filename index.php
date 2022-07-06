@@ -555,7 +555,7 @@
 										 <i class="icon-pen2"></i>
 									  </div>
 									  <div class="timeline-label">
-										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2022 - Now (<?= $tpandidiff->m ." months ". $tpandidiff->y ." Year "?>)</span></h2>
+										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2022 - Now (<?= $tpandidiff->y ." Year ". $tpandidiff->m ." months "?>)</span></h2>
 										 <p>
 											 <strong>Jobdesk:</strong><br>
 										   <ul>
@@ -572,7 +572,7 @@
 										 <i class="icon-pen2"></i>
 										</div>
 										<div class="timeline-label">
-											<h2><a href="#">IT Network at PT Graha Mitra Teguh</a> <span>02 Jan 2019 - 28 Apr 2022 (<?= $tc->m ." months ". $tc->y ." Year "?>)</span></h2>
+											<h2><a href="#">IT Network at PT Graha Mitra Teguh</a> <span>02 Jan 2019 - 28 Apr 2022 (<?= $tc->y ." Year ". $tc->m ." months " ?>)</span></h2>
 											<p>
 												<strong>Jobdesk:</strong><br>
 												<ul>
