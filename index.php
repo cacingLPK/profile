@@ -533,7 +533,7 @@
 					</div>
 					<?php 
 						// source from https://jagowebdev.com/menghitung-selisih-waktu-dengan-php/
-						$tpandia  = new DateTime('2020-05-09');
+						$tpandia  = new DateTime('2022-05-09');
 						$tpandiz = new DateTime(); // Waktu sekarang
 						$tpandidiff  = $tpandia->diff($tpandiz);
 						date_default_timezone_set('Asia/Jakarta');
@@ -552,7 +552,7 @@
 										 <i class="icon-pen2"></i>
 									  </div>
 									  <div class="timeline-label">
-										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2020 - Now (<?= $tpandidiff->y ?>)</span></h2>
+										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2022 - Now (<?= $tpandidiff->m ." months ". $tpandidiff->y ." Year "?>)</span></h2>
 										 <p>
 											 <strong>Jobdesk:</strong><br>
 										   <ul>
