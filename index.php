@@ -552,7 +552,8 @@
 						$rich = $richnet->diff($now);
 
 						$metikin = new DateTime('2011-06-00');
-						$metik = $metikin->diff($now);
+						$metikin2 = new DateTime('2013-08-00');
+						$metik = $metikin->diff($metikin2);
 					?>
 					
 					<div class="row">
