@@ -533,17 +533,26 @@
 					</div>
 					<?php 
 						// source from https://jagowebdev.com/menghitung-selisih-waktu-dengan-php/
-						$tpandia  = new DateTime('2022-05-09');
-						$tpandiz = new DateTime(); // Waktu sekarang
-						$tpandidiff  = $tpandia->diff($tpandiz);
+						$now = new DateTime(); // Waktu sekarang
 						date_default_timezone_set('Asia/Jakarta');
-						$ta  = new DateTime('2019-01-02');
-						$tb = new DateTime(); // Waktu sekarang
-						$tc  = $ta->diff($tb);
 
-						$thnmasuk = 2020;
-						$thnsekarang = 2020;
-						$hitungtahun = $thnsekarang - $thnmasuk;
+						$dipandi  = new DateTime('2022-05-09');
+						$pandi  = $dipandi->diff($now);
+						
+						$digmt  = new DateTime('2019-01-02');
+						$gmt  = $digmt->diff($now);
+
+						$seoin = new DateTime('2019-09-00');
+						$seo = $seoin->diff($now);
+
+						$interlogin = new DateTime('2018-08-00');
+						$interlog = $interlogin->diff($now);
+
+						$richnet = new DateTime('2013-01-00');
+						$rich = $richnet->diff($now);
+
+						$metikin = new DateTime('2011-06-00');
+						$metik = $metikin->diff($now);
 					?>
 					
 					<div class="row">
@@ -555,7 +564,7 @@
 										 <i class="icon-pen2"></i>
 									  </div>
 									  <div class="timeline-label">
-										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2022 - Now (<?= $tpandidiff->y ." Year ". $tpandidiff->m ." months "?>)</span></h2>
+										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2022 - Now (<?= $pandi->y ." Year ". $pandi->m ." months "?>)</span></h2>
 										 <p>
 											 <strong>Jobdesk:</strong><br>
 										   <ul>
@@ -572,7 +581,7 @@
 										 <i class="icon-pen2"></i>
 										</div>
 										<div class="timeline-label">
-											<h2><a href="#">IT Network at PT Graha Mitra Teguh</a> <span>02 Jan 2019 - 28 Apr 2022 (<?= $tc->y ." Year ". $tc->m ." months " ?>)</span></h2>
+											<h2><a href="#">IT Network at PT Graha Mitra Teguh</a> <span>02 Jan 2019 - 28 Apr 2022 (<?= $gmt->y ." Year ". $gmt->m ." months " ?>)</span></h2>
 											<p>
 												<strong>Jobdesk:</strong><br>
 												<ul>
@@ -614,7 +623,7 @@
 									  </div>
    
 									  <div class="timeline-label">
-										 <h2><a href="#">SEO Content Writer at PT Graha Mitra Teguh</a> <span>Sept 2019 - Jun 2020</span></h2>
+										 <h2><a href="#">SEO Content Writer at PT Graha Mitra Teguh</a> <span>Sept 2019 - Jun 2020 (<?= $seo->y ." Year ". $seo->m ." months " ?>)</span></h2>
 										 <p>
 											 <strong>Jobdesk:</strong><br>
 											 <ul>
@@ -632,7 +641,7 @@
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a href="#">IT Support at PT Interlog Digital Indonesia</a> <span>Aug 2018 - Dec 2018</span></h2>
+					               	<h2><a href="#">IT Support at PT Interlog Digital Indonesia</a> <span>Aug 2018 - Dec 2018 (<?= $interlog->y ." Year ". $interlog->m ." months " ?>)</span></h2>
 					                  <p>
 										<strong>Jobdesk:</strong><br>
 										<ul>
@@ -653,7 +662,7 @@
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a href="#">Internet Cafe Technician (RichNet)</a> <span>2013 - Aug 2018</span></h2>
+					               	<h2><a href="#">Internet Cafe Technician (RichNet)</a> <span>2013 - Aug 2018 (<?= $rich->y ." Year ". $rich->m ." months " ?>)</span></h2>
 					                  <p>
 										<strong>Jobdesk:</strong><br>
 										<ul>
@@ -675,7 +684,7 @@
 									   <i class="icon-pen2"></i>
 					               </div>
 								   <div class="timeline-label">
-									   <h2><a href="#">Laboratory Assistant at LPK Media Informatika</a> <span>2011-2013</span></h2>
+									   <h2><a href="#">Laboratory Assistant at LPK Media Informatika</a> <span>2011-2013 (<?= $metik->y ." Year ". $metik->m ." months " ?>)</span></h2>
 									   <p>
 										   <strong>Jobdesk:</strong>
 										   <ul>
