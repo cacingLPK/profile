@@ -667,7 +667,7 @@
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a href="#">Internet Cafe Technician (RichNet)</a> <span>2013 - Aug 2018 (<?= $rich->y ." Year ". $rich->m ." months " ?>)</span></h2>
+					               	<h2><a href="#">Internet Cafe Technician (RichNet)</a> <span>2013 - 2018 (<?= $rich->y ." Year "?>)</span></h2>
 					                  <p>
 										<strong>Jobdesk:</strong><br>
 										<ul>
@@ -689,7 +689,7 @@
 									   <i class="icon-pen2"></i>
 					               </div>
 								   <div class="timeline-label">
-									   <h2><a href="#">Laboratory Assistant at LPK Media Informatika</a> <span>2011-2013 (<?= $metik->y ." Year ". $metik->m ." months " ?>)</span></h2>
+									   <h2><a href="#">Laboratory Assistant at LPK Media Informatika</a> <span>2011 - 2013 (<?= $metik->y ." Year "?>)</span></h2>
 									   <p>
 										   <strong>Jobdesk:</strong>
 										   <ul>
