@@ -569,7 +569,7 @@
 										 <i class="icon-pen2"></i>
 									  </div>
 									  <div class="timeline-label">
-										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2022 - Now (<?= $pandi->y ." Year ". $pandi->m ." months "?>)</span></h2>
+										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2022 - Now (<?= $pandi->y ." Year ". $pandi->m ." months ". $pandi->d." day "?>)</span></h2>
 										 <p>
 											 <strong>Jobdesk:</strong><br>
 										   <ul>
