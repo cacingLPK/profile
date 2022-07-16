@@ -569,7 +569,7 @@
 										 <i class="icon-pen2"></i>
 									  </div>
 									  <div class="timeline-label">
-										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2022 - Now (<?= $pandi->y ." Year ". $pandi->m ." months ". $pandi->d." day "?>)</span></h2>
+										  <h2><a href="#">System Administrator at <b>PANDI</b></a> <span>09 Mei 2022 - Now (<?= $pandi->y ." Year ". $pandi->m ." months ". $pandi->d." day"?>)</span></h2>
 										 <p>
 											 <strong>Jobdesk:</strong><br>
 										   <ul>
@@ -586,7 +586,7 @@
 										 <i class="icon-pen2"></i>
 										</div>
 										<div class="timeline-label">
-											<h2><a href="#">IT Network at PT Graha Mitra Teguh</a> <span>02 Jan 2019 - 28 Apr 2022 (<?= $gmt->y ." Year ". $gmt->m ." months ". $gmt->d." day " ?>)</span></h2>
+											<h2><a href="#">IT Network at PT Graha Mitra Teguh</a> <span>02 Jan 2019 - 28 Apr 2022 (<?= $gmt->y ." Year ". $gmt->m ." months ". $gmt->d." day"?>)</span></h2>
 											<p>
 												<strong>Jobdesk:</strong><br>
 												<ul>
@@ -628,7 +628,7 @@
 									  </div>
    
 									  <div class="timeline-label">
-										 <h2><a href="#">SEO Content Writer at PT Graha Mitra Teguh</a> <span>Sept 2019 - Jun 2020 (<?= $seo->y ." Year ". $seo->m ." months " ?>)</span></h2>
+										 <h2><a href="#">SEO Content Writer at PT Graha Mitra Teguh</a> <span>Sept 2019 - Jun 2020 (<?= $seo->y ." Year ". $seo->m ." months" ?>)</span></h2>
 										 <p>
 											 <strong>Jobdesk:</strong><br>
 											 <ul>
@@ -646,7 +646,7 @@
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a href="#">IT Support at PT Interlog Digital Indonesia</a> <span>Aug 2018 - Dec 2018 (<?= $interlog->y ." Year ". $interlog->m ." months " ?>)</span></h2>
+					               	<h2><a href="#">IT Support at PT Interlog Digital Indonesia</a> <span>Aug 2018 - Dec 2018 (<?= $interlog->y ." Year ". $interlog->m ." months" ?>)</span></h2>
 					                  <p>
 										<strong>Jobdesk:</strong><br>
 										<ul>
@@ -667,7 +667,7 @@
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a href="#">Internet Cafe Technician (RichNet)</a> <span>2013 - 2018 (<?= $rich->y ." Year "?>)</span></h2>
+					               	<h2><a href="#">Internet Cafe Technician (RichNet)</a> <span>2013 - 2018 (<?= $rich->y ." Year"?>)</span></h2>
 					                  <p>
 										<strong>Jobdesk:</strong><br>
 										<ul>
@@ -689,7 +689,7 @@
 									   <i class="icon-pen2"></i>
 					               </div>
 								   <div class="timeline-label">
-									   <h2><a href="#">Laboratory Assistant at LPK Media Informatika</a> <span>2011 - 2013 (<?= $metik->y ." Year "?>)</span></h2>
+									   <h2><a href="#">Laboratory Assistant at LPK Media Informatika</a> <span>2011 - 2013 (<?= $metik->y ." Year"?>)</span></h2>
 									   <p>
 										   <strong>Jobdesk:</strong>
 										   <ul>
