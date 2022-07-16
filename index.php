@@ -540,16 +540,20 @@
 						$pandi  = $dipandi->diff($now);
 						
 						$digmt  = new DateTime('2019-01-02');
-						$gmt  = $digmt->diff($now);
+						$digmt2 = new DateTime('2022-04-28');
+						$gmt  = $digmt->diff($digmt2);
 
 						$seoin = new DateTime('2019-09-00');
-						$seo = $seoin->diff($now);
+						$seoin2 = new DateTime('2020-06-00');
+						$seo = $seoin->diff($seoin2);
 
 						$interlogin = new DateTime('2018-08-00');
-						$interlog = $interlogin->diff($now);
+						$interlogin2 = new DateTime('2018-12-00');
+						$interlog = $interlogin->diff($interlogin2);
 
 						$richnet = new DateTime('2013-01-00');
-						$rich = $richnet->diff($now);
+						$richnet2 = new DateTime('2018-08-00');
+						$rich = $richnet->diff($richnet2);
 
 						$metikin = new DateTime('2011-06-00');
 						$metikin2 = new DateTime('2013-08-00');
@@ -582,7 +586,7 @@
 										 <i class="icon-pen2"></i>
 										</div>
 										<div class="timeline-label">
-											<h2><a href="#">IT Network at PT Graha Mitra Teguh</a> <span>02 Jan 2019 - 28 Apr 2022 (<?= $gmt->y ." Year ". $gmt->m ." months " ?>)</span></h2>
+											<h2><a href="#">IT Network at PT Graha Mitra Teguh</a> <span>02 Jan 2019 - 28 Apr 2022 (<?= $gmt->y ." Year ". $gmt->m ." months ". $gmt->d." day " ?>)</span></h2>
 											<p>
 												<strong>Jobdesk:</strong><br>
 												<ul>
