@@ -573,7 +573,12 @@
 										 <p>
 											 <strong>Jobdesk:</strong><br>
 										   <ul>
-											   <li>Monitoring Infrastruktur DNS</li>
+												<li>Configure DNS using (bind9, knot).</li>
+												<li>Configure BGP using bird on Ubuntu Server.</li>
+												<li>Manage Kubernetes Cluster.</li>
+												<li>Manage self hosted gitlab.</li>
+												<li>Maintain gitlab ci/cd.</li>
+												<li>Create, configure, maintain Database Cluster</li>
 										   </ul>
 										 </p>
 									  </div>
