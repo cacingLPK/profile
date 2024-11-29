@@ -945,7 +945,7 @@
 									<i class="icon-telegram"></i>
 								</div>
 								<div class="colorlib-text">
-									<p><a href="https://t.me/cacinglpk" target="_blank">Telegram Me</a></p>
+									<p><a href="https://t.me/akrisnam" target="_blank">Telegram Me</a></p>
 								</div>
 							</div>							
 							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
@@ -953,7 +953,7 @@
 									<i class="icon-whatsapp"></i>
 								</div>
 								<div class="colorlib-text">
-									<p><a href="https://wa.me/6281284818010" target="_blank">Whatsapp Me</a></p>
+									<p><a href="https://wa.me/" target="_blank">Whatsapp Me</a></p>
 								</div>
 							</div>
 						</div>
