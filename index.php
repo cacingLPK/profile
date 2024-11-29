@@ -1,6 +1,6 @@
-<!-- <?php
-	require 'admin/proses/funcDB.php';
-?> -->
+<?php
+	// require 'admin/proses/funcDB.php';
+?>
 <!DOCTYPE HTML>
 <html>
 	<head>
